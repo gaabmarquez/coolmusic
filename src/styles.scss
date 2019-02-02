@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.navbar {
+  margin-bottom: 250px;
+}
+
+
+body {
+  h1 {
+    color: #2c3e50;
+  }
+
+  h4 {
+    color: #34495e
+  }
+
+}
+
+.custom-nav {
+  background-color: #e74c3c
+}
