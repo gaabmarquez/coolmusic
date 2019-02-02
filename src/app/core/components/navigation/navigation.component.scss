@@ -1,0 +1,13 @@
+.custom-nav {
+  border-top: #475251 solid 1px;
+  margin-bottom: 250px;
+
+  a {
+    color: #bb0000;
+
+    &:hover {
+      color: #bb0000;
+      font-weight: bold;
+    }
+  }
+}
