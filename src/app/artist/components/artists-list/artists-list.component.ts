@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Artist } from '../../models/artist.model';
+import { ArtistService } from '../../services/artist.service';
 
 @Component({
   selector: 'cm-artists-list',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtistsListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private artistService: ArtistService) {
+
+  }
+
+  public artists: Artist[] = [];
 
   ngOnInit() {
+    this.artistService.getTopArtists().subscribe(
+      artists => {
+
+        for (let artist of artists.artists.artist) {
+          let artistAux: Artist = new Artist(artist.name, artist.url, "", artist.image[4]["#text"])
+          this.artists.push(artistAux);
+        }
+
+      }
+
+
+    );
+
   }
+
 
 }

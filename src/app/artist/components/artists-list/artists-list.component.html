@@ -1,0 +1,13 @@
+<h1 class="text-center">Top Artists</h1>
+<br />
+<hr />
+<div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let artist of artists">
+    <div class="text-center">
+      <img src="{{ artist.img }}" class="avatar" alt="Avatar" /> <br />
+      <h3>
+        <b>{{ artist.name }}</b>
+      </h3>
+    </div>
+  </div>
+</div>
