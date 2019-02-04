@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ViewChild,
+  ElementRef,
+  Renderer,
+  Renderer2
+} from '@angular/core';
 
 @Component({
   selector: 'cm-navigation',
@@ -6,10 +13,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
+  @ViewChild('navbarResponsive')
+  navbarResponsive: ElementRef;
 
-  constructor() { }
+  constructor(private render: Renderer2) {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  collapse() {
+    console.log('collapse');
+    this.render.removeClass(this.navbarResponsive.nativeElement, 'show');
   }
-
 }

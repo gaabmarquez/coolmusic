@@ -1,13 +1,25 @@
-<h1 class="text-center">Top Artists</h1>
-<br />
-<hr />
-<div class="row">
-  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let artist of artists">
-    <div class="text-center">
-      <img src="{{ artist.img }}" class="avatar" alt="Avatar" /> <br />
-      <h3>
-        <b>{{ artist.name }}</b>
-      </h3>
-    </div>
+<div *ngIf="isLoading" class="text-center">
+    <i class="fa fa-spinner fa-spin loader"></i>
   </div>
-</div>
+
+  <div  *ngIf="!isLoading">
+
+      <h1 class="text-center">Top Artists</h1>
+      <br />
+      <hr />
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let artist of artists">
+          <a [routerLink]="['/artist/', artist.name]">
+            <div class="text-center">
+              <img src="{{ artist.img }}" class="avatar" alt="Avatar" /> <br />
+              <h3>
+                <b>{{ artist.name }}</b>
+              </h3>
+            </div>
+          </a>
+        </div>
+
+      </div>
+  </div>
+
+

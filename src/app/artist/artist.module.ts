@@ -2,7 +2,6 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { ArtistsListComponent } from "./components/artists-list/artists-list.component";
 import { ArtistDetailComponent } from "./components/artist-detail/artist-detail.component";
-import { ArtistCardComponent } from "./components/artists-list/artist-card/artist-card.component";
 import { HttpClientModule } from "@angular/common/http";
 import { RouterModule } from '@angular/router';
 
@@ -10,9 +9,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     ArtistsListComponent,
     ArtistDetailComponent,
-    ArtistCardComponent
   ],
   imports: [CommonModule, HttpClientModule, RouterModule],
-  exports: [ArtistsListComponent, ArtistDetailComponent, ArtistCardComponent]
+  exports: [ArtistsListComponent, ArtistDetailComponent]
 })
 export class ArtistModule {}
