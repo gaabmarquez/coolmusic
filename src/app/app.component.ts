@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Cool Music';
+
+  onActivate(event) {
+    window.scroll(0, 0);
+  }
 }

@@ -1,7 +1,10 @@
 <cm-navigation></cm-navigation>
 
 <div class="main-container pb-4">
-  <div class="container"><router-outlet></router-outlet></div>
+  <div class="container">
+    <!-- <router-outlet></router-outlet> -->
+    <router-outlet (activate)="onActivate($event)" ></router-outlet>
+  </div>
 </div>
 
 <cm-footer></cm-footer>
