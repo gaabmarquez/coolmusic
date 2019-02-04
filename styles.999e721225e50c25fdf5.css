@@ -3,7 +3,7 @@
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */*{margin:0;padding:0;box-sizing:border-box;background-color:#000;font-family:Lato,Arial,sans-serif;font-weight:300;font-size:20px;text-rendering:optimizeLegibility}body h1,body h2,body h3,body h4,body h5,body h6{color:#dadfdf}body li,body p,body td,body th{color:#b6c0bf}body a :visited,body a:active,body a:link{color:#b00!important}body a:hover{font-weight:700}body .nav-link{color:#b00!important}body .loader{font-size:90px;color:#b00}body .avatar{border-radius:50%;width:90%}/*!
+ */*{margin:0;padding:0;box-sizing:border-box;background-color:#000;font-family:Lato,Arial,sans-serif;font-weight:300;font-size:20px;text-rendering:optimizeLegibility}body h1,body h2,body h3,body h4,body h5,body h6{color:#dadfdf}body li,body p,body td,body th{color:#b6c0bf}body .nav-link,body a:active,body a:hover,body a:link,body a:visited{color:#b00!important}body a:hover{font-weight:700}body .loader{margin-top:25%;margin-bottom:25%;font-size:90px;color:#b00}body .avatar{border-radius:50%;width:90%}@media (max-width:768px){body .avatar{width:75%!important;margin-bottom:30px}}body li{list-style:none}/*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
