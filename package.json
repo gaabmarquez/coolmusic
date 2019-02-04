@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "ghp": "ng build --prod && cp -r dist/* docs/"
+    "ghp": "ng build --prod && cp -r dist/coolmusic/* docs/"
   },
   "private": true,
   "dependencies": {
