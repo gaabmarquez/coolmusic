@@ -9,7 +9,7 @@
       <hr />
       <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let artist of artists">
-          <a [routerLink]="['/artist/', artist.name]">
+          <a [routerLink]="['/artist/', artist.name]" fragment="top">
             <div class="text-center">
               <img src="{{ artist.img }}" class="avatar" alt="Avatar" /> <br />
               <h3>

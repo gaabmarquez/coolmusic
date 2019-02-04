@@ -5,8 +5,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/landing', pathMatch: 'full' },
-  { path: 'landing', component: LandingComponent },
+  { path: '', redirectTo: '/artists', pathMatch: 'full' },
+  { path: 'about', component: LandingComponent },
   { path: 'artists', component: ArtistsListComponent },
   { path: 'artist/:name', component: ArtistDetailComponent }
 ];
