@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "ghp": "ng build --prod &&  npx ngh --dir=dist/coolmusic"
+    "ghp": "ng build --prod --base-href 'https://gaabmarquez.github.io/coolmusic/' &&  npx ngh --dir=dist/coolmusic"
   },
   "private": true,
   "dependencies": {
